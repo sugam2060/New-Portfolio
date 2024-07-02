@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+header .head{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    & a{
+        text-decoration: none;
+        color: black;
+
+        & h1{
+        margin-left: 70px;
+        font-family: "Concert One", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        font-style: normal;
+        transition: transform 0.2s ease;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+        }
+    }
+
+
+
+    & nav{
+        display: flex;
+        width: 50%;
+        align-items: center;
+
+        & ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+
+            & li{
+                 
+
+                & a{
+                    position: relative;
+                    text-decoration: none;
+                    color: rgb(193, 183, 183);
+                    font-size: 20px;
+                    font-family: sans-serif;
+                }
+
+                & a::after{
+                    content: "";
+                    position: absolute;
+                    top: 20px;
+                    width: 0;
+                    height: 2px;
+                    background-color: rgb(255, 50, 50);
+                    left: 0;
+                    transition: 0.4s;
+                }
+
+                & a:hover::after{
+                    width: 100%;
+                }
+
+            }
+
+
+            & li a:hover{
+                color: black;
+            }
+
+        }
+    }
+    
+}
+
+header .main{
+    display: flex;
+    align-self: center;
+    margin-top: 6%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .main .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 2.5rem;
+    height: 15rem;
+    background-color: rgb(255, 204, 64);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.3s ease;
+
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    & a{
+        font-size: 30px;
+        padding-left: 5.5px;
+        color: black;
+    }
+}
+
+header .main .introduction{
+    width: 75%;
+    align-self: flex-end;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+    & .design{
+        width: 20rem;
+        overflow: hidden;
+        height: 30rem;
+
+        & .div-1{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 204, 64);
+            border-radius: 50%;
+            position: relative;
+            left: 8rem;
+        }
+
+        & .div-2{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 139, 6, 0.596);
+            border-radius: 50%;
+            position: relative;
+            left:14rem;
+            bottom: 4rem;
+        }
+    }
+}
+
+header .main .introduction .intro{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+
+    & .intro-1{
+        margin-top: 20px;
+
+        & p{
+            font-size: 40px;
+            font-family: sans-serif;
+            line-height: 1;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            & span{
+                color: rgb(255, 107, 81);
+            }
+        }
+
+        & .role{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+}
+
+header .main .introduction .intro img{
+    width:250px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+

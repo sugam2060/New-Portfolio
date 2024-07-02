@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+#about{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    
+    & .container{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        
+        & img{
+            border-radius: 10px;
+            height: 500px;
+        }
+
+        & .right-col{
+            /* margin-left: 20px; */
+            width: 50%;
+            
+
+            & h2{
+                padding-top: 0px;
+                font-size: 50px;
+                text-align: center;
+                font-family: "Concert One", sans-serif;
+                font-weight: 400;
+                font-size: 60px;
+                font-style: normal;
+            }
+
+            & p{
+                margin-top: 20px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                font-size: 20px;
+                font-family: sans-serif;
+
+                & span{
+                    color:  rgb(255, 50, 50);
+                }
+            }
+
+            & .tabs{
+                display: flex;
+                flex-direction: column;
+
+                & .tab-val{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 10rem;
+
+                    & p{
+                        font-size: 20px;
+                        font-family: sans-serif;
+                        cursor: pointer;
+                    }
+                }
+                
+
+                & .tab-content{
+                    margin-top: 20px;
+
+                    & ul{
+                        list-style: none;
+
+                        & li{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+#about .container .right-col .tab-content{
+    display: none;
+}
+
+#about .container .right-col .active-content{
+    display: inline-block;
+}
+
+#about .container .right-col .tabs .tab-val .tab-link{
+    position: relative;
+
+}
+
+#about .container .right-col .tabs .tab-val .tab-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 21px;
+    background-color: rgb(255, 50, 50);
+    height: 2.5px;
+    transition: 0.3s;
+}
+
+#about .container .right-col .tabs .tab-val .tab-link.active-link::after{
+    width: 50%;
+}
+
+#about .container:hover{
+    transform: translateY(-15px);
+}
