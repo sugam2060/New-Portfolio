@@ -29,6 +29,7 @@ function About(){
                                     <li>- ExpressJS</li>
                                     <li>- ReactJS</li>
                                     <li>- NodeJS</li>
+                                    <li>- SQL</li>
                                     <li>- HTML</li>
                                     <li>- CSS</li>
                                 </ul>
