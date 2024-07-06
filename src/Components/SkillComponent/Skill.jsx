@@ -16,7 +16,7 @@ function Skill(){
             <Skillset val='ExpressJS' icon={faJs}></Skillset>
             <Skillset val='MongoDB' icon={faDatabase}></Skillset>
         </div>
-        <a href="#">see more</a>
+        {/* <a href="#">see more</a> */}
         </div>
         </>
     )
