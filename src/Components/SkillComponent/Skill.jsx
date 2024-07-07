@@ -8,13 +8,15 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 function Skill(){
     return(
         <>
-        <div className="skill">
-            <h2>Skills</h2>
+        <div id="skill">
+        <div className="skill-header">
+        <h2>Skills</h2>
         <div className="skill-content">
-        <Skillset val='Nodejs' icon={faNode}></Skillset>
+            <Skillset val='Nodejs' icon={faNode}></Skillset>
             <Skillset val='ReactJS' icon={faReact}></Skillset>
             <Skillset val='ExpressJS' icon={faJs}></Skillset>
             <Skillset val='MongoDB' icon={faDatabase}></Skillset>
+        </div>
         </div>
         {/* <a href="#">see more</a> */}
         </div>
