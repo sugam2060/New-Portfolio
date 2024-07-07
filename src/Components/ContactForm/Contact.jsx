@@ -25,7 +25,7 @@ function Left(){
   return(
     <div className="left">
         <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> sugampudasain3@gmail.com</p>
-        <a href="src\assets\CV.pdf" download className='btn'>Download CV</a>
+        <a href="CV.pdf" download className='btn'>Download CV</a>
     </div>
   )
 }
