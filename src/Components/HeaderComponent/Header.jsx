@@ -4,7 +4,7 @@ import { faGithub,faLinkedin,faXTwitter,faInstagram,faFacebook} from '@fortaweso
 function Header(){
     return(
         <>
-        <header>
+        <header id='main'>
             <Head></Head>
             <div className='main'>
             <Social></Social>
@@ -27,11 +27,11 @@ function Head(){
             <a href="https://sugampudasain.netlify.app/" target='blank'><h1>SUGAM.net</h1></a>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#Container">Contact</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
