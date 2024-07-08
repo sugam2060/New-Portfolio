@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-header{
+header {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,85 +20,75 @@ header{
     overflow: hidden;
 }
 
-header .head{
+header .head {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-
-    & a{
-        text-decoration: none;
-        color: black;
-
-        & h1{
-        margin-left: 70px;
-        font-family: "Concert One", sans-serif;
-        font-weight: 400;
-        font-size: 40px;
-        font-style: normal;
-        transition: transform 0.2s ease;
-
-        &:hover{
-            transform: scale(1.2);
-        }
-        }
-    }
-
-
-
-    & nav{
-        display: flex;
-        width: 50%;
-        align-items: center;
-
-        & ul{
-            list-style: none;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: space-evenly;
-
-            & li{
-                 
-
-                & a{
-                    position: relative;
-                    text-decoration: none;
-                    color: rgb(193, 183, 183);
-                    font-size: 20px;
-                    font-family: sans-serif;
-                }
-
-                & a::after{
-                    content: "";
-                    position: absolute;
-                    top: 20px;
-                    width: 0;
-                    height: 2px;
-                    background-color: rgb(255, 50, 50);
-                    left: 0;
-                    transition: 0.4s;
-                }
-
-                & a:hover::after{
-                    width: 100%;
-                }
-
-            }
-
-
-            & li a:hover{
-                color: black;
-            }
-
-        }
-    }
-    
 }
 
-header .main{
+header .head a {
+    text-decoration: none;
+    color: black;
+}
+
+header .head a h1 {
+    margin-left: 70px;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    transition: transform 0.2s ease;
+}
+
+header .head a h1:hover {
+    transform: scale(1.2);
+}
+
+header .head nav {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+header .head nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+header .head nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(193, 183, 183);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+header .head nav ul li a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 50, 50);
+    left: 0;
+    transition: 0.4s;
+}
+
+header .head nav ul li a:hover::after {
+    width: 100%;
+}
+
+header .head nav ul li a:hover {
+    color: black;
+}
+
+header .main {
     display: flex;
     align-self: center;
     margin-top: 6%;
@@ -107,8 +97,7 @@ header .main{
     align-items: center;
 }
 
-
-header .main .social{
+header .main .social {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -119,54 +108,51 @@ header .main .social{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: transform 0.3s ease;
-
-
-    &:hover{
-        transform: scale(1.05);
-    }
-
-    & a{
-        font-size: 30px;
-        padding-left: 5.5px;
-        color: black;
-    }
 }
 
-header .main .introduction{
+header .main .social:hover {
+    transform: scale(1.05);
+}
+
+header .main .social a {
+    font-size: 30px;
+    padding-left: 5.5px;
+    color: black;
+}
+
+header .main .introduction {
     width: 75%;
     align-self: flex-end;
     margin-left: auto;
     display: flex;
     justify-content: space-between;
-    
-
-    & .design{
-        width: 20rem;
-        overflow: hidden;
-        height: 30rem;
-
-        & .div-1{
-            height: 300px;
-            width: 300px;
-            background-color: rgb(255, 204, 64);
-            border-radius: 50%;
-            position: relative;
-            left: 8rem;
-        }
-
-        & .div-2{
-            height: 200px;
-            width: 200px;
-            background-color: rgba(255, 139, 6, 0.596);
-            border-radius: 50%;
-            position: relative;
-            left:14rem;
-            bottom: 4rem;
-        }
-    }
 }
 
-header .main .introduction .intro{
+header .main .introduction .design {
+    width: 20rem;
+    overflow: hidden;
+}
+
+header .main .introduction .design .div-1 {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 204, 64);
+    border-radius: 50%;
+    position: relative;
+    left: 8rem;
+}
+
+header .main .introduction .design .div-2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 139, 6, 0.596);
+    border-radius: 50%;
+    position: relative;
+    left: 14rem;
+    bottom: 4rem;
+}
+
+header .main .introduction .intro {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -175,35 +161,150 @@ header .main .introduction .intro{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-
-    &:hover{
-        transform: scale(1.03);
-    }
-
-    & .intro-1{
-        margin-top: 20px;
-
-        & p{
-            font-size: 40px;
-            font-family: sans-serif;
-            line-height: 1;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            & span{
-                color: rgb(255, 107, 81);
-            }
-        }
-
-        & .role{
-            font-size: 20px;
-            line-height: 1.5;
-        }
-    }
 }
 
-header .main .introduction .intro img{
-    width:250px;
+header .main .introduction .intro:hover {
+    transform: scale(1.03);
+}
+
+header .main .introduction .intro .intro-1 {
+    margin-top: 20px;
+}
+
+header .main .introduction .intro .intro-1 p {
+    font-size: 40px;
+    font-family: sans-serif;
+    line-height: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header .main .introduction .intro .intro-1 p span {
+    color: rgb(255, 107, 81);
+}
+
+header .main .introduction .intro .intro-1 .role {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+header .main .introduction .intro img {
+    width: 250px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    header .main .introduction {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .main .introduction .design {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        & .div-1{
+            display: none;
+        }
+
+        & .div-2{
+            display: none;
+        }
+
+    header .main .introduction .intro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .head a h1 {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    header .head nav ul li a {
+        font-size: 18px;
+    }
+
+    header .main .social {
+        width: 2rem;
+        height: 12rem;
+    }
+
+    header .main .social a {
+        font-size: 25px;
+    }
+
+    header .main .introduction .intro .intro-1 p {
+        font-size: 30px;
+    }
+
+    header .main .introduction .intro .intro-1 .role {
+        font-size: 18px;
+    }
+
+    header .main .introduction .intro img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .head a h1 {
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    header .head nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .head nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .head nav ul li {
+        margin: 10px 0;
+    }
+
+    header .head nav ul li a {
+        font-size: 16px;
+    }
+
+    header .main .introduction {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .main .introduction .design {
+        width: 90%;
+    }
+
+    header .main .introduction .intro {
+        width: 90%;
+    }
+
+    header .main .introduction .intro .intro-1 p {
+        font-size: 20px;
+    }
+
+    header .main .introduction .intro .intro-1 .role {
+        font-size: 16px;
+    }
+
+    header .main .introduction .intro img {
+        width: 150px;
+    }
+}
+}

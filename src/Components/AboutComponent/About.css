@@ -1,106 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-#about{
+#about {
     width: 100%;
     display: grid;
     justify-content: center;
     padding: 20px;
-    
-    & .container{
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        padding: 20px;
-        box-shadow: rgba(0, 02, 0, 0.15) 0px 10px 50px 0px;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-        
-        & img{
-            border-radius: 10px;
-            height: 500px;
-        }
-
-        & .right-col{
-            /* margin-left: 20px; */
-            width: 50%;
-            
-
-            & h2{
-                padding-top: 0px;
-                font-size: 50px;
-                text-align: center;
-                font-family: "Concert One", sans-serif;
-                font-weight: 400;
-                font-size: 60px;
-                font-style: normal;
-            }
-
-            & p{
-                margin-top: 20px;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                font-size: 20px;
-                font-family: sans-serif;
-
-                & span{
-                    color:  rgb(255, 50, 50);
-                }
-            }
-
-            & .tabs{
-                display: flex;
-                flex-direction: column;
-
-                & .tab-val{
-                    margin-top: 20px;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 50%;
-                    flex-wrap: wrap;
-    
-
-                    & p{
-                        font-size: 20px;
-                        font-family: sans-serif;
-                        cursor: pointer;
-                    }
-                }
-                
-
-                & .tab-content{
-                    margin-top: 20px;
-
-                    & ul{
-                        list-style: none;
-
-                        & li{
-                            font-size: 25px;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-
 }
 
+#about .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+    box-shadow: rgba(0, 2, 0, 0.15) 0px 10px 50px 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
 
+#about .container img {
+    border-radius: 10px;
+    height: 500px;
+}
 
-#about .container .right-col .tab-content{
+#about .container .right-col {
+    margin-left: 20px;
+    width: 50%;
+}
+
+#about .container .right-col h2 {
+    padding-top: 0px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+}
+
+#about .container .right-col p {
+    margin-top: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#about .container .right-col p span {
+    color: rgb(255, 50, 50);
+}
+
+#about .container .right-col .tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .container .right-col .tabs .tab-val {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+#about .container .right-col .tabs .tab-val p {
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+#about .container .right-col .tabs .tab-content {
+    margin-top: 20px;
+}
+
+#about .container .right-col .tabs .tab-content ul {
+    list-style: none;
+}
+
+#about .container .right-col .tabs .tab-content ul li {
+    font-size: 25px;
+}
+
+#about .container .right-col .tab-content {
     display: none;
 }
 
-#about .container .right-col .active-content{
+#about .container .right-col .active-content {
     display: inline-block;
 }
 
-#about .container .right-col .tabs .tab-val .tab-link{
+#about .container .right-col .tabs .tab-val .tab-link {
     position: relative;
-
 }
 
-#about .container .right-col .tabs .tab-val .tab-link::after{
+#about .container .right-col .tabs .tab-val .tab-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -111,17 +103,15 @@
     transition: 0.3s;
 }
 
-#about .container .right-col .tabs .tab-val .tab-link.active-link::after{
+#about .container .right-col .tabs .tab-val .tab-link.active-link::after {
     width: 50%;
 }
 
-#about .container:hover{
+#about .container:hover {
     transform: translateY(-15px);
 }
 
-
-/* scroll bar styling */
-
+/* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
     height: 12px; /* Height of the scrollbar */
@@ -141,4 +131,68 @@
 /* When hovering over the draggable part */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    #about .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .container img {
+        height: auto;
+        width: 80%;
+    }
+
+    #about .container .right-col {
+        width: 80%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #about .container .right-col .tabs .tab-val {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #about .container img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about .container .right-col h2 {
+        font-size: 40px;
+    }
+
+    #about .container .right-col p {
+        font-size: 18px;
+    }
+
+    #about .container .right-col .tabs .tab-val p {
+        font-size: 18px;
+    }
+
+    #about .container .right-col .tabs .tab-content ul li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about .container .right-col h2 {
+        font-size: 30px;
+    }
+
+    #about .container .right-col p {
+        font-size: 16px;
+    }
+
+    #about .container .right-col .tabs .tab-val p {
+        font-size: 16px;
+    }
+
+    #about .container .right-col .tabs .tab-content ul li {
+        font-size: 18px;
+    }
 }

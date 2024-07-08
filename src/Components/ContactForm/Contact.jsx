@@ -57,7 +57,7 @@ function Right(){
       <input placeholder='Your name' required type="text" name="user_name" />
       <input placeholder="Email" type="email" required name="user_email" />
       <textarea placeholder='message' required name="message" />
-      <input className="formbtn" type="submit" value="Send" />
+      <input className="formbtn" type="submit" value="Send"/>
     </form>
     </div>
   )

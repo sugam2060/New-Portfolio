@@ -8,10 +8,10 @@ function Portfolio(){
                 <div className="container">
                     <h2>Projects</h2>
                     <div className="project-list">
-                        {/* <Apps link="testing.png" projectName="project-1"></Apps> */}
-                        {/* <Apps link="testing.png" projectName="project-2"></Apps> */}
-                        {/* <Apps link="testing.png" projectName="project-3"></Apps> */}
-                        {/* <Apps link="testing.png" projectName="project-4"></Apps> */}
+                        <Apps link="testing.png" projectName="project-1"></Apps>
+                        <Apps link="testing.png" projectName="project-2"></Apps>
+                        <Apps link="testing.png" projectName="project-3"></Apps>
+                        <Apps link="testing.png" projectName="project-4"></Apps>
                     </div>
                     <a className="btn" href="#portfolio"><button>See more</button></a>
                 </div>

@@ -1,114 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
-#contact{
+
+#contact {
     padding-bottom: 5rem;
     display: grid;
-    & .container{
-        padding: 20px;
-        margin-top: 5rem;
-        border-radius: 10px;
-        justify-self: center;
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        transition: 0.3s;
+}
 
-        &:hover{
-            transform: translateY(-10px);
-        }
-        & .inner-container{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
+#contact .container {
+    padding: 20px;
+    margin-top: 5rem;
+    border-radius: 10px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
+}
 
-        & .left{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+#contact .container:hover {
+    transform: translateY(-10px);
+}
 
+#contact .container .inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-            & p{
-                font-size: 30px;
-                font-family: sans-serif;
-                margin: 20px;
-            }
+#contact .container .inner-container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-            & a{
-                padding: 10px 20px;
-                border-radius: 10px;
-                border: 2px solid black;
-                text-decoration: none;
-                font-weight: 400;
-                font-size: 20px;
-                font-family: sans-serif;
-                transition: 0.3s;
-                color: black;
+#contact .container .inner-container .left p {
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 20px;
+}
 
-                &:hover{
-                    transform: translateY(-5px);
-                    background-color: rgb(255, 146, 37);
-                }
-            }
-        }
+#contact .container .inner-container .left a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 0.3s;
+    color: black;
+}
 
-        & .right{
-            display: grid;
-            border-left: 3px solid black;
-            & form{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 20px;
+#contact .container .inner-container .left a:hover {
+    transform: translateY(-5px);
+    background-color: rgb(255, 146, 37);
+}
 
-                & input{
-                    font-family: sans-serif;
-                    font-size: 20px;
-                    padding: 10px;
-                    width: 70%;
-                    margin:20px 0;
-                    border-radius: 10px;
-                }
+#contact .container .inner-container .right {
+    display: grid;
+    border-left: 3px solid black;
+}
 
-                & textarea{
-                    font-size: 15px;
-                    font-family: sans-serif;
-                    min-width: 30rem;
-                    max-width: 30rem;
-                    min-height: 10rem;
-                    max-height: 10rem;
-                    border-radius: 10px;
-                    padding: 5px;
-                }
+#contact .container .inner-container .right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
 
+#contact .container .inner-container .right form input {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    width: 70%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
 
-                & .formbtn{
-                    width: 10rem;
-                    transition: 0.3s;
-                    cursor: pointer;
+#contact .container .inner-container .right form textarea {
+    font-size: 15px;
+    font-family: sans-serif;
+    min-width: 30rem;
+    max-width: 30rem;
+    min-height: 10rem;
+    max-height: 10rem;
+    border-radius: 10px;
+    padding: 5px;
+}
 
-                    &:hover{
-                        transform: translateY(-3px);
-                        background-color: rgb(255, 146, 37);
-                    }
-                }
-            }
-        }
+#contact .container .inner-container .right form .formbtn {
+    width: 10rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-        }
+#contact .container .inner-container .right form .formbtn:hover {
+    transform: translateY(-3px);
+    background-color: rgb(255, 146, 37);
+}
+
+#contact h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    #contact .container .inner-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .container .inner-container .right {
+        border-left: none;
+        border-top: 3px solid black;
+        margin-top: 20px;
+    }
+
+    #contact .container .inner-container .right form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #contact .container .inner-container .left p {
+        font-size: 25px;
+    }
+
+    #contact .container .inner-container .left a {
+        font-size: 18px;
     }
 }
 
-
-    & h2{
-        font-size: 50px;
-        margin-top: 10px;
-                text-align: center;
-                font-family: "Concert One", sans-serif;
-                font-weight: 400;
-                font-size: 50px;
-                font-style: normal;
-                
+@media (max-width: 768px) {
+    #contact .container .inner-container .left p {
+        font-size: 20px;
     }
 
+    #contact .container .inner-container .left a {
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact .container .inner-container .left p {
+        font-size: 18px;
+    }
+
+    #contact .container .inner-container .left a {
+        font-size: 14px;
+    }
+
+    #contact .container .inner-container .right form input {
+        width: 100%;
+    }
+
+    #contact .container .inner-container .right form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+}
