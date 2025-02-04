@@ -3,6 +3,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
+import CV from '../../assets/CV.pdf'
 
 
 
@@ -25,7 +26,7 @@ function Left(){
   return(
     <div className="left">
         <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> sugampudasain3@gmail.com</p>
-        <a href="CV.pdf" download className='btn'>Download CV</a>
+        <a href={CV} download className='btn'>Download CV</a>
     </div>
   )
 }
